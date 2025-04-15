@@ -1,108 +1,126 @@
+<!DOCTYPE html>
 <html>
-<title>title</title>
-   <body>
-    <img src="logo.png" height="100" width="540">
-      <table border="6" cellspacing="6" cellpadding="6">
-          <caption>MY TIME TABLE</caption>
+<head>
+    <title>My Timetable</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align items at the top initially */
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+            margin: 0; /* Remove default body margins */
+        }
 
-          <tr>
-            <th bgcolor="sky blue" align="center">day/time</th>
-            <th bgcolor="sky blue" align="center">8:9 am</th>
-            <th bgcolor="sky blue" align="center">9:10 am</th>
-            <th bgcolor="sky blue" align="center">10:11 am</th>
-            <th bgcolor="sky blue" align="center">11:12 am</th>
-            <th bgcolor="sky blue" align="center">12:1 pm</th>
-            <th bgcolor="sky blue" align="center">1:2 pm</th>
-            <th bgcolor="sky blue" align="center">2:3 pm</th>
-            <th bgcolor="sky blue" align="center">3:4 pm</th>
-            <th bgcolor="sky blue" align="center">4:5 pm</th>
-         </tr>
+        table {
+            margin-bottom: 20px; /* Add some space between the tables */
+        }
 
+        caption {
+            text-align: center;
+        }
 
-              <tr>
-                <th bgcolor="sky blue" align="center" bgcolor="orange">MONDAY</th>
-                <td colspan="2" align="center" bgcolor="orange">Computer networks</td> 
-                <td colspan="2" align="center" bgcolor="orange">free</td>
-                <td align="center" bgcolor="orange">LUNCH</td>
-                <td colspan="2" align="center" bgcolor="orange">Statistics</td>
-                <th colspan="2" align="center" bgcolor="orange">Reasoning Ability</th>                   
-                </tr>
+        th, td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="logo.png" height="100" width="540" alt="Logo">
 
-              <tr>
-                <th bgcolor="sky blue" align="center" >TUESDAY</th>
-                <th colspan="2" align="center" bgcolor="orange">free</th>
-	    <th colspan="2" align="center" bgcolor="orange">free</th>
-	    <td align="center" bgcolor="orange">LUNCH</td>
-                <th colspan="2" align="center" bgcolor="orange">Web application</th>
-	    <th colspan="2" align="center" bgcolour="orange">Python</th>
-                </tr>
+    <table border="6" cellspacing="6" cellpadding="6">
+        <caption><strong>MY TIME TABLE</strong></caption>
+        <tr>
+            <th bgcolor="skyblue">Day/Time</th>
+            <th bgcolor="skyblue">8-9 am</th>
+            <th bgcolor="skyblue">9-10 am</th>
+            <th bgcolor="skyblue">10-11 am</th>
+            <th bgcolor="skyblue">11-12 pm</th>
+            <th bgcolor="skyblue">12-1 pm</th>
+            <th bgcolor="skyblue">1-2 pm</th>
+            <th bgcolor="skyblue">2-3 pm</th>
+            <th bgcolor="skyblue">3-4 pm</th>
+            <th bgcolor="skyblue">4-5 pm</th>
+        </tr>
 
-              <tr>
-                <th bgcolor="sky blue" align="center">WEDNESDAY</th>
-                <td colspan="2" align="center" bgcolor="orange">free</td>
-                <td colspan="2" align="center" bgcolor="orange">Computer networks</td>                    
-                <td align="center" bgcolor="orange">LUNCH</td>
-                <td colspan="2" align="center" bgcolor="orange">Mentor meet</td>                    
-                <th colspan="2" align="center" bgcolor="orange">free</th>                    
-             </tr>
+        <tr>
+            <th bgcolor="skyblue">MONDAY</th>
+            <td colspan="2" bgcolor="orange">Computer Networks</td>
+            <td colspan="2" bgcolor="orange">Free</td>
+            <td bgcolor="orange">LUNCH</td>
+            <td colspan="2" bgcolor="orange">Statistics</td>
+            <td colspan="2" bgcolor="orange">Reasoning Ability</td>
+        </tr>
 
-              <tr>
-                <th bgcolor="sky blue" align="center">THURSDAY</th>
-                <td colspan="2" align="center" bgcolor="orange">Python</td>
-                <td colspan="2" align="center" bgcolor="orange">statistics</td>                    
-                <td align="center" bgcolor="orange">LUNCH</td>
-                <td colspan="2" align="center" bgcolor="orange">python</td>                    
-                <th colspan="2" align="center" bgcolor="orange">free</th>                    
-             </tr>
+        <tr>
+            <th bgcolor="skyblue">TUESDAY</th>
+            <td colspan="2" bgcolor="orange">Free</td>
+            <td colspan="2" bgcolor="orange">Free</td>
+            <td bgcolor="orange">LUNCH</td>
+            <td colspan="2" bgcolor="orange">Web Application</td>
+            <td colspan="2" bgcolor="orange">Python</td>
+        </tr>
 
-                <tr>
-                <th bgcolor="sky blue" align="center">FRIDAY</th>
-                <th colspan="2" align="center" bgcolor="orange">free</th>                    
-                <th colspan="2" align="center" bgcolor="orange">python</th>
-                <td align="center" bgcolor="orange">LUNCH</td>
-                <td colspan="2" align="center" bgcolor="orange">web application</td>                    
-                <td colspan="2" align="center" bgcolor="orange">free</td>
-                </tr>
+        <tr>
+            <th bgcolor="skyblue">WEDNESDAY</th>
+            <td colspan="2" bgcolor="orange">Free</td>
+            <td colspan="2" bgcolor="orange">Computer Networks</td>
+            <td bgcolor="orange">LUNCH</td>
+            <td colspan="2" bgcolor="orange">Mentor Meet</td>
+            <td colspan="2" bgcolor="orange">Free</td>
+        </tr>
 
-      </table>
-      <table border="4" cellspacing="4" cellpadding="4">
+        <tr>
+            <th bgcolor="skyblue">THURSDAY</th>
+            <td colspan="2" bgcolor="orange">Python</td>
+            <td colspan="2" bgcolor="orange">Statistics</td>
+            <td bgcolor="orange">LUNCH</td>
+            <td colspan="2" bgcolor="orange">Python</td>
+            <td colspan="2" bgcolor="orange">Free</td>
+        </tr>
 
-/<caption>SUBJECT AND THEIR RESPECTIVE SUBJECT CODES </caption>
-                 <tr>
-                <th align="center" bgcolor="blue">S.NO</th>
-                <th align="center" bgcolor="blue">Subject Code</th>
-                <th align="center" bgcolor="blue">Subject Name</th>
-                </tr>
+        <tr>
+            <th bgcolor="skyblue">FRIDAY</th>
+            <td colspan="2" bgcolor="orange">Free</td>
+            <td colspan="2" bgcolor="orange">Python</td>
+            <td bgcolor="orange">LUNCH</td>
+            <td colspan="2" bgcolor="orange">Web Application</td>
+            <td colspan="2" bgcolor="orange">Free</td>
+        </tr>
+    </table>
 
-                 <tr>
-                <td align="center" bgcolor="blue">1.</td>
-                <td align="center" bgcolor="yellow">19AI414</td>
-                <td align="center" bgcolor="gold">Fundamentals Of Web Application Development (web application)</td>
-                </tr>
-
-                 <tr>
-                <th align="center" bgcolor="blue">2.</th>
-                <td align="center" bgcolor="yellow">19AI301</th>
-                <td align="center" bgcolor="gold">Python Programming (python)</th>
-                </tr>
-
-                 <tr>
-                <th align="center" bgcolor="blue">3.</th>
-                <td align="center" bgcolor="yellow">19cs406</th>
-                <td align="center" bgcolor="gold">Computer network </th>
-	    </tr>
-
-	     <tr>
-                <th align="center" bgcolor=" blue">4.</th>
-                <td align="center" bgcolor="yellow">19EY709</th>
-                <td align="center" bgcolor="gold"> Reasoning ability </th>
-                </tr>
-
-                 <tr>
-                <th align="center" bgcolor="blue">5.</th>
-                <td align="center" bgcolor="yellow">19MA211</th>
-                <td align="center" bgcolor="gold">Statistics and numerical methods</th>
-                </tr>
-
-      </table>    
-  </body>
+    <table border="4" cellspacing="4" cellpadding="4">
+        <caption><strong>SUBJECTS AND THEIR CODES</strong></caption>
+        <tr>
+            <th bgcolor="blue">S.No</th>
+            <th bgcolor="blue">Subject Code</th>
+            <th bgcolor="blue">Subject Name</th>
+        </tr>
+        <tr>
+            <td bgcolor="blue">1</td>
+            <td bgcolor="yellow">19AI414</td>
+            <td bgcolor="gold">Fundamentals of Web Application Development</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue">2</td>
+            <td bgcolor="yellow">19AI301</td>
+            <td bgcolor="gold">Python Programming</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue">3</td>
+            <td bgcolor="yellow">19CS406</td>
+            <td bgcolor="gold">Computer Networks</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue">4</td>
+            <td bgcolor="yellow">19EY709</td>
+            <td bgcolor="gold">Reasoning Ability</td>
+        </tr>
+        <tr>
+            <td bgcolor="blue">5</td>
+            <td bgcolor="yellow">19MA211</td>
+            <td bgcolor="gold">Statistics and Numerical Methods</td>
+        </tr>
+    </table>
+</body>
+</html>
